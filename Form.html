@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+<title>Form1</title>
+</head>
+<body>
+ <h2> Student Registration Form</h2>
+ <form>
+ <!--Text Input-->
+ <label>Full Name</label>
+ <input type = "Text" name="name" required><br><br>
+
+ <!--Email Input-->
+ <label>Email:</label><br>
+ <input type="email" name="email" required><br><br>
+
+ <!--Password input-->
+ <label>Password:</label><br>
+ <input type="password" name="password" required><br><br>
+
+ <!--Radio Button-->
+ <label>Gender</label><br>
+ <input type="radio" name="gender" value="male">Male
+ <input type="radio" name="gender" value="female">Female<br><br>
+ 
+ <!--CheckBox-->
+ <label>Skills:</label><br>
+ <input type="checkbox" name="skill1">HTML
+ <input type="checkbox" name="skill2">CSS
+ <input type="checkbox" name="skill3">JavaScript<br><br>
+
+ <!--Dropdown-->
+ <label>Course:</label><br>
+ <select name="course">
+ <option>Web Development</option>
+ <option>Data Science</option>
+ <option>AI & ML</option>
+ </select><br><br>
+
+<!--Textarea-->
+<label>Address</label><br>
+<Textarea rows="4" cols="30"></textarea><br><br>
+
+<!--Buttons-->
+ <input type="Submit" value="Register">
+ <input type="reset" value="clear">
+
+</form>
+</body>
+</html>
