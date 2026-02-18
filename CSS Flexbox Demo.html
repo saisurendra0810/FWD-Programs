@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Flexbox Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== Page Styling ===== */
+body {
+ font-family: Arial, sans-serif;
+ margin: 20px;
+ background-color: #f5f5f5;
+}
+
+/* ===== Flex Container ===== */
+.flex-container {
+ display: flex; /* Enables Flexbox */
+ justify-content: space-between; /* Horizontal alignment */
+ align-items: center; /* Vertical alignment */
+ background-color: #e3f2fd;
+ padding: 20px;
+ height: 200px;
+ border: 2px solid #2196f3;
+}
+
+/* ===== Flex Items ===== */
+.flex-item {
+ width: 100px;
+ height: 60px;
+ background-color: #2196f3;
+ color: white;
+ display: flex; /* Flex inside flex */
+ justify-content: center;
+ align-items: center;
+ font-weight: bold;
+ border-radius: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>CSS Flexbox Demonstration</h1>
+
+<p>
+Flexbox is a one-dimensional layout model used to align and distribute space
+between elements easily.
+</p>
+
+<h2>Flex Container Example</h2>
+
+<div class="flex-container">
+ <div class="flex-item">Box 1</div>
+ <div class="flex-item">Box 2</div>
+ <div class="flex-item">Box 3</div>
+ <div class="flex-item">Box 4</div> <!-- New Card Added -->
+</div>
+
+<h2>Explanation</h2>
+<ul>
+ <li><strong>display: flex</strong> → Activates Flexbox layout.</li>
+ <li><strong>justify-content: space-between</strong> → Aligns items horizontally with space between them.</li>
+ <li><strong>align-items: center</strong> → Aligns items vertically at the center.</li>
+</ul>
+
+<h2>Common justify-content Values</h2>
+<ul>
+ <li><code>flex-start</code> – Items at the beginning</li>
+ <li><code>center</code> – Items at the center</li>
+ <li><code>space-between</code> – Equal space between items</li>
+ <li><code>space-around</code> – Space around items</li>
+ <li><code>space-evenly</code> – Equal spacing everywhere</li>
+</ul>
+
+<h2>Common align-items Values</h2>
+<ul>
+ <li><code>flex-start</code> – Top alignment</li>
+ <li><code>center</code> – Center alignment</li>
+ <li><code>flex-end</code> – Bottom alignment</li>
+ <li><code>stretch</code> – Default stretch</li>
+</ul>
+
+<hr>
+
+<p><strong>Use Cases:</strong> Navigation bars, card layouts, dashboards, forms, and responsive designs.</p>
+
+</body>
+</html>

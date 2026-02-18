@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid timetable</title>
+    <style>
+        body{
+            background-color: rgb(195, 216, 195);
+            font-family:monospace;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows:auto;
+            gap:10px;
+            padding: 20px;
+
+        }
+        .box{
+            background: greenyellow;
+            padding:15px;
+            text-align: center;
+            border:1px solid #aaa;
+            border-radius:6px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">B tech timetable using CSS</h2>
+    <div class="grid-container">
+        <div class="Box">Monday</div>
+        <div class="Box">Tuesday</div>
+        <div class="Box">wednesday</div>
+        <div class="Box">Thursday</div>
+        <div class="Box">Friday</div>
+
+        <div class="Box">English</div>
+        <div class="Box">Maths</div>
+        <div class="Box">telugu</div>
+        <div class="Box">Science</div>
+
+        <div class="Box">c languages</div>
+        <div class="Box">Web devolpment</div>
+        <div class="Box">Java</div>
+        <div class="Box">Python</div>
+        <div class="Box">C++</div>
+       
+       
+    </div>
+    
+</body>
+</html>
