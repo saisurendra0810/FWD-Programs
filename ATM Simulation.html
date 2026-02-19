@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Simulation</title>
+</head>
+<body>
+
+<h2>ATM Machine</h2>
+<p id="output"></p>
+
+<script>
+
+let balance = 5000;   // initial balance
+let history = "Initial Balance: ₹" + balance + "<br><br>";
+
+// loop until balance becomes zero
+while (balance > 0) {
+
+    let amount = prompt("Enter withdrawal amount:");
+
+    // cancel pressed
+    if (amount === null) {
+        history += "Transaction cancelled by user<br>";
+        break;
+    }
+
+    amount = Number(amount);
+
+    // invalid input
+    if (amount <= 0 || isNaN(amount)) {
+        alert("Enter valid amount!");
+        continue;
+    }
+
+    // insufficient balance
+    if (amount > balance) {
+        alert("Insufficient Balance!");
+        continue;
+    }
+
+    // deduct amount
+    balance -= amount;
+
+    history += "Withdrawn: ₹" + amount +
+               " | Remaining Balance: ₹" + balance + "<br>";
+
+    // balance zero
+    if (balance === 0) {
+        history += "<br><b>Your account balance is ZERO</b>";
+        alert("Account empty!");
+    }
+}
+
+document.getElementById("output").innerHTML = history;
+
+</script>
+
+</body>
+</html>

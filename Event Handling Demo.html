@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling Demo</title>
+</head>
+<body>
+
+<h2>JavaScript Event Handling</h2>
+
+Name: <input type="text" id="nameBox"><br><br>
+
+<button id="btn">Click Me</button>
+
+<p id="output"></p>
+
+<script>
+
+// CLICK EVENT
+document.getElementById("btn").addEventListener("click", function() {
+    document.getElementById("output").innerHTML = "Button was clicked!";
+});
+
+// INPUT EVENT
+document.getElementById("nameBox").addEventListener("input", function() {
+    document.getElementById("output").innerHTML = "Typing: " + this.value;
+});
+
+// CHANGE EVENT
+document.getElementById("nameBox").addEventListener("change", function() {
+    alert("You entered: " + this.value);
+});
+
+</script>
+
+</body>
+</html>
